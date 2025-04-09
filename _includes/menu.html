@@ -20,6 +20,9 @@
           </a>
         {% endif %}
       </li>
+      {% unless forloop.last %}
+          <li class="menu-separator">★</li>
+        {% endunless %}
     {% endfor %}
     </ul>
   </nav>

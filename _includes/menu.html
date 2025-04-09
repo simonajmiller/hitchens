@@ -8,6 +8,7 @@
           Home
         </a>
       </li>
+      <li class="menu-separator">★</li>
     {% for item in site.data.menu %}
       <li {% if page.url == item.url %}class="active"{% endif %}>
         {% if item.url contains 'http' %}
@@ -21,8 +22,8 @@
         {% endif %}
       </li>
       {% unless forloop.last %}
-          <li class="menu-separator">★</li>
-        {% endunless %}
+        <li class="menu-separator">★</li>
+      {% endunless %}
     {% endfor %}
     </ul>
   </nav>

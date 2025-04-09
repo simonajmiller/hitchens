@@ -27,8 +27,10 @@ layout: default
   <h1 class="content-title divided">
     {% if site.paginate and site.paginate_path and paginator.page > 1 %}
       Page {{ paginator.page }}
+    {% elsif page.title %}
+      {{ page.title }}
     {% else %}
-      about me
+      Contents
     {% endif %}
   </h1>
 

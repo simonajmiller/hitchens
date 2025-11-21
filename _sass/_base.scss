@@ -119,8 +119,12 @@ details[open] {
 }
 
 details summary {
+  font-size: 1.25em;
   font-weight: bold;
+  font-style: italic;
+  text-align: center;
   cursor: pointer;
+  background: #f9f9f9;
 }
 
 .divided::after {
